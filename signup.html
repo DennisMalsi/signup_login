@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="/js/validation.js" defer></script>
+    <style>
+      
+        body {
+            
+            margin-left: 1000px;
+            background-color: #00fc26f1; /* Light blue color */
+            margin: 0; /* Remove default margin */
+            display: flex;
+            flex-direction: column; /* Arrange children in a column */
+            align-items: center; /* Center-align children horizontally */
+            padding-top: 20px; /* Add some padding at the top for spacing */
+            background-image: url('pecture/haha.jpg');
+            background-size: cover; /* Cover the entire form with the image */
+            background-position: center; /* Center the image within the form */
+            background-attachment: fixed;
+            background-repeat: no-repeat; /* No repetition of the image */
+            opacity: 0.8; /* Adjust opacity if needed to increase legibility */
+        }
+
+     
+        form {
+            margin-top: 90px;
+            margin-left:500px;
+            margin-right: auto;
+            width: 100%; 
+            max-width: 330px; 
+            padding: 20px; 
+            background-color: rgb(128, 133, 128); 
+            border-radius: 8px; 
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+            
+        }
+
+        input {
+            width: 300px;
+        }
+       
+        h1 {
+            color: rgb(255, 238, 238);
+            text-align: center; 
+            margin-bottom: 20px;
+        }
+        button{
+            margin-top: 25px;
+            margin-left:100px;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    
+   
+    
+    <form action="process-signup.php" method="post" id="signup" novalidate>
+        <h1>Signup</h1>
+        <div>
+            
+            <input type="text" id="name" name="name" placeholder="Name">
+        </div>
+        
+        <div>
+           
+            <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+        
+        <div>
+          
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        
+        <div>
+         
+            <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Repeat Password">
+        </div>
+        
+        <button>Sign up</button>
+    </form>
+    
+</body>
+</html>
